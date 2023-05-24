@@ -63,7 +63,7 @@ DECLARE M INT;
 SET M = N-1;
   RETURN (
       # Write your MySQL query statement below.
-      SELECT salary FROM Employee
+      SELECT DISTINCT salary FROM Employee
       ORDER BY salary DESC LIMIT M, 1
   );
 END
